@@ -1,0 +1,19 @@
+{
+  "name": "battleships",
+  "version": "1.0.0",
+  "description": "react-redux test battleship app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Egregor2011/battleships.git"
+  },
+  "author": "egregor2011",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Egregor2011/battleships/issues"
+  },
+  "homepage": "https://github.com/Egregor2011/battleships#readme"
+}
