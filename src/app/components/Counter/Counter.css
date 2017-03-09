@@ -1,0 +1,37 @@
+.container {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    color: rgb(57,57,57);
+}
+.grid {
+    width: 50%;
+    padding:0 20px;
+
+}
+.user {
+    composes: grid;
+    background-color: rgb(253,161,9);
+}
+.pc {
+    composes: grid;
+    background-color: rgb(36,171,142);
+}
+.grid-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.score {
+    composes: grid-flex ;
+    height: 60%;
+    font-size: 60px;
+    border-bottom: 1px solid rgb(57,57,57);
+}
+.player {
+    composes: grid-flex;
+    height: 40%;
+    font-size: 26px;
+
+}

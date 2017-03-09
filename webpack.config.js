@@ -34,6 +34,8 @@ module.exports = {
     hot: true,
     // enable HMR on the server
 
+    poll: true,
+
     contentBase: resolve(__dirname, 'dist'),
     // match the output path
 
@@ -54,9 +56,29 @@ module.exports = {
         test: /\.css$/,
         use: [
           'style-loader',
-          'css-loader?modules',
-          'postcss-loader',
+            {
+                loader: 'css-loader',
+                options: {
+                    modules: true,
+                    localIdentName: 'bs__[local]--[hash:base64:5]'
+                }
+            },
+          {
+              loader: 'postcss-loader',
+              options: {
+                  plugins: function () {
+                      return [
+                          require('precss'),
+                          require('autoprefixer')
+                      ];
+                  }
+              }
+          },
         ],
+      },
+      {
+        test: /\.(jpg|png|gif)$/,
+        use: 'file-loader'
       },
     ],
   },

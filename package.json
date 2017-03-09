@@ -4,7 +4,7 @@
   "description": "react-redux test battleship app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,8 @@
     "babel-preset-react": "6.11.1",
     "babel-preset-stage-2": "6.13.0",
     "css-loader": "0.23.1",
-    "extract-text-webpack-plugin": "2.0.0-rc.3",
+    "extract-text-webpack-plugin": "^2.0.0-beta",
+    "file-loader": "^0.10.1",
     "postcss-loader": "0.9.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
@@ -34,8 +35,5 @@
     "uglifyjs-webpack-plugin": "^0.1.5",
     "webpack": "2.1.0-beta.25",
     "webpack-dev-server": "2.1.0-beta.0"
-  },
-  "scripts" : {
-    "start" : "webpack-dev-server --open"
   }
 }

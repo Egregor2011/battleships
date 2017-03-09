@@ -1,0 +1,12 @@
+.app {
+    text-size-adjust: none;
+    font-family: helvetica, arial, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.grid {
+
+}
