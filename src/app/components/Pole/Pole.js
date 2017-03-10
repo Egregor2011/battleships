@@ -11,13 +11,14 @@ export default (props) => {
       });
     };
     const shipShow = () => {
-      props.ships.map((ship) => {
-          return console.log(ship.position);
-      })
+        console.log('ok');
+
+      // props.ships.map((ship) => {
+      //     return console.log(ship.position);
+      // })
     };
     return (
-        <div className={style.pole}>
-            {/*{shipShow()}*/}
+        <div onClick={shipShow} className={style.pole}>
             {poleRender()}
         </div>
     )

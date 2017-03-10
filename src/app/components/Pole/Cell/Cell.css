@@ -3,13 +3,15 @@
     height: 48px;
     border: 1px solid rgb(57,57,57);
     cursor: pointer;
+    background-size: cover;
+    background-position: center center;
 }
-.black {
+.miss {
     composes: cell;
-    background-color: rgb(57,57,57);
+    background-image: url('./assets/Miss.png');
 
 }
-.red {
+.hit {
     composes: cell;
-    background-color: red;
+    background-image: url('./assets/Hit.png');
 }

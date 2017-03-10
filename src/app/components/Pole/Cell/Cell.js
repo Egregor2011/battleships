@@ -15,7 +15,7 @@ export default class Cell extends React.Component {
     _hitResult() {
         const shot = `${this.props.x},${this.props.y}`;
         this.props.ships.map((ship) => {
-            ship['position'].map((pos) => {
+            ship['positions'].map((pos) => {
                 let target = pos.toString();
                 if(shot === target) {
                     this.setState({hit: true});
@@ -29,12 +29,12 @@ export default class Cell extends React.Component {
     }
 
     _handleClick() {
-        this.state.hit === true ? this.setState({color: style.red}) : this.setState({color: style.black})
+        this.state.hit === true ? this.setState({color: style.hit}) : this.setState({color: style.miss})
     }
 
     render() {
         return (
-            <div onClick={this._handleClick} data-position-x={this.props.x} data-position-y={this.props.y} className={this.state.color}></div>
+            <div onClick={this._handleClick} className={this.state.color}></div>
         )
     }
 }

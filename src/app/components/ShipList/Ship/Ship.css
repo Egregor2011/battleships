@@ -1,0 +1,49 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.indicator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+.damage {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-image: url('./assets/Miss_small.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+}
+.icon {
+    display: block;
+    background-position: center center;
+    background-size: contain;
+    background-repeat:no-repeat;
+    width: 150px;
+    height: 40px;
+
+}
+.destroyer {
+    composes: icon;
+    background-image: url('./assets/Carrier_Shape.png');
+}
+.battleship {
+    composes: icon;
+    background-image: url('./assets/Battleship_Shape.png');
+}
+.carrier {
+    composes: icon;
+    background-image: url('./assets/Aircraft_Shape.png');
+}
+.cruiser {
+    composes: icon;
+    background-image: url('./assets/Cruiser_Shape.png');
+}
+.submarine {
+    composes: icon;
+    background-image: url('./assets/Submarine_Shape.png');
+}

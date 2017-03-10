@@ -17,10 +17,6 @@ const shipInfo = {
 
 const rows = 10;
 
-const ships = shipInfo.layout.map((ship) => {
-  const shipPosition = ship['positions'].length;
-  return {position: ship['positions'],ship: ship['ship'], hitpoints: shipPosition }
-});
-
+const ships = shipInfo.layout;
 
 export {ships, rows};
