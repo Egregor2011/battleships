@@ -1,4 +1,5 @@
 const shipInfo = {
+  "score": 0,
   "shipTypes": {
     "carrier": { "size": 5, "count": 1 },
     "battleship": { "size": 4, "count": 1 },
@@ -7,16 +8,16 @@ const shipInfo = {
     "destroyer": { "size": 2, "count": 1 },
   },
   "layout": [
-    { "ship": "carrier", "positions": [[2,9], [3,9], [4,9], [5,9], [6,9]] },
-    { "ship": "battleship", "positions": [[5,2], [5,3], [5,4], [5,5]] },
-    { "ship": "cruiser", "positions": [[8,1], [8,2], [8,3]] },
-    { "ship": "submarine", "positions": [[3,0], [3,1], [3,2]] },
-    { "ship": "destroyer", "positions": [[0,0], [1,0]] }
+    { "ship": "carrier", "positions": [[2,9], [3,9], [4,9], [5,9], [6,9]], "sunk": false, "hitpoints": 5 },
+    { "ship": "battleship", "positions": [[5,2], [5,3], [5,4], [5,5]], "sunk": false, "hitpoints": 4 },
+    { "ship": "cruiser", "positions": [[8,1], [8,2], [8,3]], "sunk": false, "hitpoints": 3 },
+    { "ship": "submarine", "positions": [[3,0], [3,1], [3,2]], "sunk": false, "hitpoints":  3},
+    { "ship": "destroyer", "positions": [[0,0], [1,0]], "sunk": false, "hitpoints": 2 },
   ]
 }
 
 const rows = 10;
 
-const ships = shipInfo.layout;
+const ships = shipInfo;
 
 export {ships, rows};
