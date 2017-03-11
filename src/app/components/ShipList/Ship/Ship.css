@@ -9,14 +9,24 @@
     justify-content: space-between;
     margin-left: 20px;
 }
-.damage {
+.point {
     width: 20px;
     height: 20px;
     display: block;
-    background-image: url('./assets/Miss_small.png');
     background-repeat:no-repeat;
     background-size: contain;
     margin-right: 10px;
+
+}
+.default {
+    composes: point;
+    background-image: url('./assets/Miss_small.png');
+
+}
+.hit {
+    composes: point;
+    background-image: url('./assets/Hit_small.png');
+
 }
 .icon {
     display: block;
@@ -46,4 +56,33 @@
 .submarine {
     composes: icon;
     background-image: url('./assets/Submarine_Shape.png');
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        margin-bottom: 10px;
+        height: 30px;
+
+    }
+    .icon {
+        width: 90px;
+        height: 24px;
+    }
+    .point {
+        width: 10px;
+        height: 10px;
+
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 450px) {
+    .point {
+        width: 8px;
+        height: 8px;
+    }
+    .icon {
+        width: 60px;
+        height: 16px;
+    }
+
+
 }

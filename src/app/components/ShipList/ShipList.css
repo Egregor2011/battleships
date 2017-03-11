@@ -1,3 +1,15 @@
 .wrapper {
-    /*min-height: 300px;*/
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 65%;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 450px) {
+
 }

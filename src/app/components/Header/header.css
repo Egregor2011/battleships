@@ -11,7 +11,7 @@
 }
 .logo {
   background-color: rgb(57,57,57);
-  width: 80px;
+  width: 7%;
   composes: main-height;
   margin-left: 20px;
 }
@@ -24,14 +24,61 @@
 .button {
   background-color: rgb(98,96,168);
   composes: main-height;
-  width: 80px;
+  width:7%;
   margin-left: 30px;
   border: none;
 }
 .icn {
   background-color: rgb(57,57,57);
   composes: main-height;
-  width: 50px;
+  width: 3%;
   margin-left: 30px;
+}
+.icn--last {
+  composes: icn;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    /*height: 40px;*/
+    margin-bottom: 10px;
+  }
+  .input {
+    width: 70%;
+
+  }
+  .button {
+    margin-left: 0;
+    width: 5%
+  }
+  .icn {
+    width: 5%
+  }
+  .icn--last {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
+  .header {
+    margin-bottom: 0;
+    height: 40px;
+  }
+  .logo {
+    width: 50px;
+    margin-left: 8px;
+  }
+  .input {
+    margin-left: 8px;
+  }
+  .button {
+    width: 35px;
+  }
+  .icn {
+    width: 35px;
+    margin-left: 3px;
+    margin-right: 5px;
+  }
 
 }

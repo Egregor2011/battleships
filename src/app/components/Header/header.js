@@ -8,8 +8,8 @@ export default () => {
       <div className={style.input}></div>
       <button className={style.button}></button>
       <div className={style.icn}></div>
-      <div className={style.icn}></div>
-      <div className={style.icn}></div>
+      <div className={style['icn--last']}></div>
+      <div className={style['icn--last']}></div>
     </header>
   )
 }

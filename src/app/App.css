@@ -8,5 +8,35 @@
     align-items: center;
 }
 .grid {
+}
+.field {
+    composes: grid;
+}
+.info {
+    composes: grid;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+    .info {
+        margin-top: 20px;
+        display: flex;
+        width: 90%;
+    }
+    .field {
+        /*width: 90%;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 450px) {
+    .info {
+        flex-direction: column;
+        margin-top: 0;
+        width: 100%;
+    }
 
 }

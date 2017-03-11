@@ -2,9 +2,6 @@ import React from 'react';
 import style from './Counter.css'
 
 export default (props) => {
-    const _test = () => {
-        return props.action(1);
-    };
     return (
         <div className={style.container}>
             <div className={style.user}>

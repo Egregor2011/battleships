@@ -1,10 +1,15 @@
-const setScore = (score) => {
+export const setScore = (score) => {
 
     return {
-        type: 'SHOT',
+        type: 'WIN',
         payload: score
     }
 
 };
 
-export default setScore;
+export const hitPoint = (hit) => {
+    return {
+        type: 'HIT',
+        payload: hit
+    }
+};

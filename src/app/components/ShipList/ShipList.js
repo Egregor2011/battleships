@@ -5,8 +5,8 @@ import style from './ShipList.css';
 export default (props) => {
     const shipRender = () => {
         return props.ships.map((current, id) => {
-            let position = current['positions'];
-            return <Ship id={id} hits={position} ship={current['ship']} />;
+            let position = current['hitpoints'];
+            return <Ship id={id} damage={current['damage']} hits={position} ship={current['ship']} />;
         })
     };
     return (

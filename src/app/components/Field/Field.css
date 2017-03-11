@@ -1,0 +1,25 @@
+.field {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 500px;
+    height: 500px;
+    border: 5px solid rgb(253,161,9);
+}
+
+
+@media screen and (max-width: 768px) {
+    .field {
+        width: 700px;
+        height: 700px;
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
+    .field {
+        width: 310px;
+        height: 310px;
+    }
+
+}
