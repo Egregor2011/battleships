@@ -8,3 +8,5 @@ To set it up locally, please git clone this repository and do:
 `npm install`
 or
 `yarn install`.
+
+Then you will be able to launch project by `npm start` or `yarn start` command
