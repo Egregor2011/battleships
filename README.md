@@ -1,6 +1,6 @@
 # Battleships
 
-Battleships game web application, Javascript implimentation (React+Redux).sd
+Battleships game web application, Javascript implementation (React+Redux)
 
 Used technologies: React/Redux/PostCss/Webpack/Babel
 
