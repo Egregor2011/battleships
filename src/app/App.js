@@ -11,7 +11,7 @@ import ShipList from './components/ShipList/ShipList.js';
 
 class App extends Component{
     gameOverCheck() {
-        const check = this.props.layout.layout.map(ship => ship['sunk']);
+        const check = this.props.layout.map(ship => ship['sunk']);
         if (!check.includes(false)) this.props.setScore()
     }
     componentDidUpdate() {
@@ -23,12 +23,12 @@ class App extends Component{
                 <Header/>
                 <div className={styles.container}>
                     <div className={styles.info}>
-                        <Counter score={this.props.layout.score}/>
-                        <ShipList ships={this.props.layout.layout}/>
+                        <Counter score={this.props.score}/>
+                        <ShipList ships={this.props.layout}/>
                     </div>
                     <div className={styles.field}>
                         <Field setScore={this.props.setScore} actions={this.props.hitPoint}
-                                cell={this.props.layout.playground}/>
+                                cell={this.props.playground}/>
                     </div>
                 </div>
             </div>
@@ -38,7 +38,9 @@ class App extends Component{
 
 function mapStateToProps (state) {
     return {
-        layout: state
+        layout: state.layout,
+        playground: state.playground,
+        score: state.score
     }
 }
 function mapDispatchToProps(dispatch) {
