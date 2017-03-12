@@ -9,7 +9,8 @@ import Field from './components/Field/Field';
 import ShipList from './components/ShipList/ShipList.js';
 
 
-class App extends Component{
+@connect(mapStateToProps, mapDispatchToProps)
+export default class App extends Component{
     gameOverCheck() {
         const check = this.props.layout.layout.map(ship => ship['sunk']);
         if (!check.includes(false)) this.props.setScore()
@@ -47,5 +48,3 @@ function mapDispatchToProps(dispatch) {
         hitPoint: bindActionCreators(hitPoint, dispatch),
     }
 }
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
