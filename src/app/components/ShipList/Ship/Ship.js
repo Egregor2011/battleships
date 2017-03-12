@@ -7,8 +7,12 @@ export default (props) => {
             return <i key={id} className={style[el.state]}></i>
         });
     };
+    const sunkCheck = () => {
+      const isSunk = props.sunk.toString();
+      return style['sunk--' + isSunk];
+    };
     return (
-        <div key={props.id} className={style.wrapper}>
+        <div key={props.id} className={sunkCheck()}>
             <i className={style[props.ship]}></i>
             <div className={style.indicator}>
                 {indicatorRender()}

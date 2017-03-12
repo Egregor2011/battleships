@@ -3,6 +3,13 @@
     align-items: center;
     margin-bottom: 18px;
 }
+.sunk--false {
+    composes: wrapper;
+}
+.sunk--true {
+    composes: wrapper;
+    opacity: 0.3;
+}
 .indicator {
     display: flex;
     align-items: center;
