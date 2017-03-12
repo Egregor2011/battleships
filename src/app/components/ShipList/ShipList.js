@@ -6,7 +6,7 @@ export default (props) => {
     const shipRender = () => {
         return props.ships.map((current, id) => {
             let position = current['hitpoints'];
-            return <Ship id={id} damage={current['damage']} hits={position} ship={current['ship']} />;
+            return <Ship id={id} damage={current['damage']} sunk={current['sunk']} hits={position} ship={current['ship']} />;
         })
     };
     return (
