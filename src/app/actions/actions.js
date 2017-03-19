@@ -1,15 +1,16 @@
-export const setScore = (score) => {
+import * as ACTIONS from './actionTypes';
 
+export const setScore = (score) => {
     return {
-        type: 'WIN',
+        type: ACTIONS.WIN,
         payload: score
-    }
+    };
 
 };
 
 export const hitPoint = (hit) => {
     return {
-        type: 'HIT',
+        type: ACTIONS.HIT,
         payload: hit
-    }
+    };
 };
