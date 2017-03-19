@@ -4,7 +4,7 @@ import style from './Ship.css';
 export default (props) => {
     const indicatorRender = () => {
       return props.damage.map((el,id) => {
-            return <i key={id} className={style[el.state]}></i>
+            return <i key={id} className={style[el.state]}></i>;
         });
     };
     const sunkCheck = () => {
@@ -18,5 +18,5 @@ export default (props) => {
                 {indicatorRender()}
             </div>
         </div>
-    )
-}
+    );
+};

@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Counter.css'
+import style from './Counter.css';
 
 export default (props) => {
     return (
@@ -13,5 +13,5 @@ export default (props) => {
                 <div className={style.player}>Player 2</div>
             </div>
         </div>
-    )
+    );
 };
