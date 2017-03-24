@@ -4,7 +4,8 @@
   "description": "react-redux test battleship app",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "build": "webpack -p --progress --profile --colors"
   },
   "repository": {
     "type": "git",

@@ -39,6 +39,12 @@ export default class App extends Component {
     }
 }
 
+App.propTypes = {
+    layout: React.PropTypes.object,
+    setScore: React.PropTypes.func,
+    hitPoint: React.PropTypes.func,
+};
+
 function mapStateToProps(state) {
     return {
         layout: state,
